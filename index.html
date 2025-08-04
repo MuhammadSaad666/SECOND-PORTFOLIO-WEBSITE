@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- telwind cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mozilla+Headline:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font icon cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- link css -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="banner">
+      <header
+        class="container mx-auto flex justify-between flex-wrap items-center p-10"
+      >
+        <!-- logo -->
+        <a href="">
+          <img
+            src="https://preview.colorlib.com/theme/dizzi/img/logo.png"
+            alt="logo"
+          />
+        </a>
+        <!-- navbar button -->
+        <button class="cursor-pointer text-white text-xl md:hidden">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <!-- nabar menu -->
+        <ul class="md:flex max-md:mt-2 space-y-2 gap-7 lg:gap-14 max-md:w-full">
+          <li><a href="">Home</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Services</a></li>
+          <li><a href="">Blog</a></li>
+          <li class="relative group">
+            <a href="#" class=""
+              >Pages<i class="fa-solid fa-angle-down ml-1"></i
+            ></a>
+            <ul
+              class="absolute dropdown p-3 left-0 top-8 w-32 bg-white rounded-md scale-y-0 origin-top group-hover:scale-y-100 duration-200 z-10"
+            >
+              <li><a href="#" class="hover:bg-gray-100">Page 1</a></li>
+              <li><a href="#" class="hover:bg-gray-100">Page 2</a></li>
+              <li><a href="#" class="hover:bg-gray-100">Page 3</a></li>
+            </ul>
+          </li>
+
+          <li><a href="">Contact</a></li>
+        </ul>
+        <!-- navbar-icons -->
+        <div class="space-x-2 lg:space-x-6 max-md:hidden">
+          <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+          <a href=""><i class="fa-brands fa-twitter"></i></a>
+          <a href=""><i class="fa-brands fa-dribbble"></i></a>
+          <a href=""><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </header>
+      <h2 class="text-white my-50 mx-48 font-semibold text-xl">We are digital agency</h2>
+       <!-- <h1 class="text-white my-30 mx-48 font-semibold text-[55px]">Digital and innovative idea</h1> -->
+          <button class="text-white">EXPLORE WORK</button>
+    </section>
+    <!-- About Section  -->
+    <div class="about-main container flex">
+      <div class="about-content">
+         <a href="" class="text-green-600">About Us</a>
+          <h1 class="text-[50px] font-black">Digital design and development company</h1>
+           <p class="text-gray-400">There winged grass midst moving earth seed herb fifth you're multiply, you divide cattle stars first cattle was had spirit you're thing, night darkness. Which itself stars creature</p>
+            <button class="text-white  btn">EXPLORE WORK</button></div>
+      <div class="about-img w-[40%]"> </div>
+    </div>
+  </body>
+</html>

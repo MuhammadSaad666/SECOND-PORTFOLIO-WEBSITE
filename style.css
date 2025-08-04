@@ -1,0 +1,56 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+.banner {
+  background-image: url("https://preview.colorlib.com/theme/dizzi/img/banner_img.png");
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+}
+.banner a {
+  color: white;
+  position: relative;
+}
+.dropdown a {
+  color: #000;
+}
+
+.banner ul a::before {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  width: 0%;
+  height: 1px;
+  background-color: rgb(0, 165, 0);
+  transition: width 0.3s ease-in-out;
+}
+.banner ul a:hover::before {
+  width: 100%;
+}
+button{
+       background-image:linear-gradient(rgb(0, 225, 255),rgb(20, 20, 20) , rgb(0, 225, 255));
+       margin-left:190px;
+       padding: 10px 20px;
+       border-radius: 100px;
+       height: 80px;
+       width: 180px;
+}
+/* ABOUT STYLLING */
+.about-main {
+  padding: 100px;
+  width: 60%;
+}
+.about-img{
+  background-image: url("	https://preview.colorlib.com/theme/dizzi/img/about_part_img.png");
+  background-size: cover;
+  background-position: left;
+  height: 500px;
+  width: 100%;
+}
+.btn{      
+       background-image:linear-gradient(rgb(0, 225, 255),rgb(20, 20, 20) , rgb(0, 225, 255));
+       margin-right:10px;
+       /* padding: 10px 20px; */
+       border-radius: 190px;
+       height: 80px;
+       width: 180px;}
