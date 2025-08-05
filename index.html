@@ -25,63 +25,133 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <section class="banner">
+    <section class="banner text-white">
       <header
-        class="container mx-auto flex justify-between flex-wrap items-center p-10"
+        class="flex justify-between container mx-auto py-10 px-5 flex-wrap items-center"
       >
-        <!-- logo -->
         <a href="">
           <img
             src="https://preview.colorlib.com/theme/dizzi/img/logo.png"
             alt="logo"
           />
         </a>
-        <!-- navbar button -->
-        <button class="cursor-pointer text-white text-xl md:hidden">
+        <button class="md:hidden text-2xl text-white cursor-pointer">
           <i class="fa-solid fa-bars"></i>
         </button>
-        <!-- nabar menu -->
-        <ul class="md:flex max-md:mt-2 space-y-2 gap-7 lg:gap-14 max-md:w-full">
+        <ul
+          class="flex md:gap-8 gap-6 max-md:w-full max-md:flex-col max-md:mt-3 max-md:hidden"
+        >
           <li><a href="">Home</a></li>
           <li><a href="">About</a></li>
           <li><a href="">Services</a></li>
           <li><a href="">Blog</a></li>
           <li class="relative group">
-            <a href="#" class=""
-              >Pages<i class="fa-solid fa-angle-down ml-1"></i
-            ></a>
+            <a href="">Pages <i class="fa-solid fa-angle-down"></i></a>
             <ul
-              class="absolute dropdown p-3 left-0 top-8 w-32 bg-white rounded-md scale-y-0 origin-top group-hover:scale-y-100 duration-200 z-10"
+              class="bg-white text-black p-4 absolute top-9 w-28 rounded-lg scale-y-0 group-hover:scale-y-100 origin-top duration-300"
             >
-              <li><a href="#" class="hover:bg-gray-100">Page 1</a></li>
-              <li><a href="#" class="hover:bg-gray-100">Page 2</a></li>
-              <li><a href="#" class="hover:bg-gray-100">Page 3</a></li>
+              <li><a href="">Page 1</a></li>
+              <li><a href="">Page 2</a></li>
+              <li><a href="">Page 3</a></li>
             </ul>
           </li>
-
           <li><a href="">Contact</a></li>
         </ul>
-        <!-- navbar-icons -->
-        <div class="space-x-2 lg:space-x-6 max-md:hidden">
+
+        <div class="space-x-6 max-md:hidden text-sm">
           <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+          <a href=""><i class="fa-brands fa-instagram"></i></a>
           <a href=""><i class="fa-brands fa-twitter"></i></a>
           <a href=""><i class="fa-brands fa-dribbble"></i></a>
-          <a href=""><i class="fa-brands fa-instagram"></i></a>
         </div>
       </header>
-      <h2 class="text-3xl text-white ml-45 mb-10 mt-45 max-md:text-xl">We are digital agency</h2>
-      <h1 class="text-5xl text-white ml-45 mt-10 max-md:text-2xl">We are digital agency<br>
-Digital and innovative idea</h1>
-          <button class="blue text-white mt-35"><a href="">EXPLORE WORK</a></button>
+      <div class="container mx-auto px-5">
+        <div class="hero max-w-[500px]">
+          <h1 class="mt-40 text-[20px] font-medium">We Are Digital Agency</h1>
+          <h1
+            class="mt-10 leading-[1.2] text-[clamp(1.375rem,0.2841rem+5.4545vw,4.375rem)] font-medium"
+          >
+            Digital And Innovative Idea
+          </h1>
+          <button
+            class="bg-green-400 py-4 px-15 rounded-full hover:bg-blue-500 duration-400"
+          >
+            Explore Work
+          </button>
+        </div>
+      </div>
     </section>
-    <!-- About Section  -->
-    <div class="about-main container flex">
-      <div class="about-content">
-         <a href="" class="text-green-600">About Us</a>
-          <h1 class="text-[50px] font-black">Digital design and development company</h1>
-           <p class="text-gray-400">There winged grass midst moving earth seed herb fifth you're multiply, you divide cattle stars first cattle was had spirit you're thing, night darkness. Which itself stars creature</p>
-            <button class="text-white  btn">EXPLORE WORK</button></div>
-      <div class="about-img w-[40%]"> </div>
+    <!-- ABOUT SECTION -->
+    <section
+      class="about-main py-30 flex container mx-auto px-5 items-center justify-center gap-5 flex-wrap"
+    >
+      <div class="about-left md:max-w-[350px] lg:max-w-[500px]">
+        <h1 class="text-green-400 md:text-2xl text-lg mb-5">About Us</h1>
+        <h1 class="text-black text-xl lg:text-5xl md:text-3xl">
+          Digital design and development company
+        </h1>
+        <p class="text-gray-400 mt-5 max-md:text-sm max-md:mt-1">
+          There winged grass midst moving earth seed herb fifth you're multiply,
+          you divide cattle stars first cattle was had spirit you're thing,
+          night darkness. Which itself stars creature.
+        </p>
+        <button
+          class="bg-green-400 py-4 px-15 text-white rounded-full hover:bg-blue-500 duration-400 mt-10"
+        >
+          Explore Work
+        </button>
+      </div>
+      <img
+        src="https://preview.colorlib.com/theme/dizzi/img/about_part_img.png"
+        alt=""
+        class="md:w-[350px]"
+      />
+    </section>
+    <!-- ABOUT SECTION -->
+    <!-- PRISING CARDs -->
+      <div class="prising-card flex gap-8 justify-center max-md:flex-col container mx-auto px-5 py-20">
+           <div class="first-main ">
+
+             <div class="first-card max-w-[350px] min-h-100 pl-5 pt-5 bg-white hover:bg-blue-500 duration-800 text-white ">
+               <h1 class="text-green-400 text-lg font-semibold">01</h1>
+               <h1 class="text-4xl text-black my-5 font-black max-w-[300px] max-md:text-base">User experience design</h1>
+               <p class="text-gray-400 max-w-[250px] max-md:text-xs">There winged grass midst moving earth seed herb fifth you multiply you divide cattle stars first cattle.</p>
+               <ul class="text-black mt-5 leading-8 max-md:text-sm hover:text-white">
+                 <li><a href="">Branding And Identity</a></li>
+                 <li><a href="">Mobile Map</a></li>
+                 <li><a href="">Web Design</a></li>
+                </ul>
+              </div>
+            </div>
+        
+            <div class="second-main mt-5">
+
+              <div class="Second-card max-w-[350px] min-h-100 pl-5 pt-5 bg-white hover:bg-blue-500 duration-800 text-white ">
+                <h1 class="text-green-400 text-lg font-semibold">02</h1>
+                <h1 class="text-4xl text-black my-5 font-black max-w-[300px] max-md:text-base">User experience design</h1>
+                <p class="text-gray-400 max-w-[250px] max-md:text-xs">There winged grass midst moving earth seed herb fifth you multiply you divide cattle stars first cattle.</p>
+                <ul class="text-black mt-5 leading-8 max-md:text-sm hover:text-white">
+                  <li><a href="">Branding And Identity</a></li>
+                  <li><a href="">Mobile Map</a></li>
+                  <li><a href="">Web Design</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="third-main mt-10">
+
+              <div class="Third-card max-w-[350px] min-h-100 pl-5 pt-5 bg-white hover:bg-blue-500 duration-800 text-white ">
+                <h1 class="text-green-400 text-lg font-semibold">03</h1>
+                <h1 class="text-4xl text-black my-5 font-black max-w-[300px] max-md:text-base">User experience design</h1>
+                <p class="text-gray-400 max-w-[250px] max-md:text-xs">There winged grass midst moving earth seed herb fifth you multiply you divide cattle stars first cattle.</p>
+                <ul class="text-black mt-5 leading-8 max-md:text-sm hover:text-white">
+                  <li><a href="">Branding And Identity</a></li>
+                  <li><a href="">Mobile Map</a></li>
+                  <li><a href="">Web Design</a></li>
+                </ul>
+              </div>
+            </div>
     </div>
+    <!-- PRISING CARDs -->
   </body>
 </html>
