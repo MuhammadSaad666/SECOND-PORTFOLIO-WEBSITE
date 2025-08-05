@@ -54,3 +54,6 @@ button{
        border-radius: 190px;
        height: 80px;
        width: 180px;}
+       .btn:hover{
+           background-color: rgb(32, 32, 32);
+       }
